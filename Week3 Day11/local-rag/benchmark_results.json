@@ -1,0 +1,122 @@
+[
+  {
+    "model": "qwen3:1.7b",
+    "category": "factual",
+    "prompt": "What causes tides on Earth? Answer in 2-3 sentences.",
+    "response": "Tides on Earth are primarily caused by the gravitational pull of the Moon, which creates bulges in the oceans as it orbits our planet. This gravitational force alternates between attracting and repelling water, resulting in high and low tides. The Sun also contributes, but its effect is smaller due to its greater distance from Earth compared to the Moon.",
+    "time_seconds": 25.22,
+    "completion_tokens": 296,
+    "tokens_per_second": 11.74,
+    "subjective_quality_1_to_5": null
+  },
+  {
+    "model": "qwen3:1.7b",
+    "category": "reasoning",
+    "prompt": "If a train travels 120km in 1.5 hours and then 80km in 1 hour, what is the average speed?",
+    "response": "",
+    "time_seconds": 33.25,
+    "completion_tokens": 400,
+    "tokens_per_second": 12.03,
+    "subjective_quality_1_to_5": null
+  },
+  {
+    "model": "qwen3:1.7b",
+    "category": "summarization",
+    "prompt": "Summarize in 2 sentences: Large language models can draft and summarize but may hallucinate facts.",
+    "response": "Large language models can draft and summarize text but may generate false or inaccurate information due to hallucinations.",
+    "time_seconds": 19.59,
+    "completion_tokens": 223,
+    "tokens_per_second": 11.38,
+    "subjective_quality_1_to_5": null
+  },
+  {
+    "model": "qwen3:1.7b",
+    "category": "structured",
+    "prompt": "List 3 European capitals. Respond ONLY with valid JSON: [{\"city\":\"...\",\"country\":\"...\"}]",
+    "response": "[\n    {\"city\":\"Paris\",\"country\":\"France\"},\n    {\"city\":\"London\",\"country\":\"United Kingdom\"},\n    {\"city\":\"Berlin\",\"country\":\"Germany\"}\n]",
+    "time_seconds": 15.09,
+    "completion_tokens": 165,
+    "tokens_per_second": 10.93,
+    "subjective_quality_1_to_5": null
+  },
+  {
+    "model": "qwen3:1.7b",
+    "category": "code",
+    "prompt": "Write a Python function that checks if a string is a palindrome.",
+    "response": "",
+    "time_seconds": 41.5,
+    "completion_tokens": 400,
+    "tokens_per_second": 9.64,
+    "subjective_quality_1_to_5": null
+  },
+  {
+    "model": "qwen3:1.7b",
+    "category": "instruction",
+    "prompt": "Respond with exactly 3 bullet points about cybersecurity best practices.",
+    "response": "- Use strong, unique passwords and enable multi-factor authentication (MFA) to prevent unauthorized access.  \n- Regularly update software and systems to patch vulnerabilities and protect against emerging threats.  \n- Train employees on cybersecurity awareness to recognize phishing attempts and other social engineering tactics.",
+    "time_seconds": 23.11,
+    "completion_tokens": 235,
+    "tokens_per_second": 10.17,
+    "subjective_quality_1_to_5": null
+  },
+  {
+    "model": "qwen3:4b",
+    "category": "factual",
+    "prompt": "What causes tides on Earth? Answer in 2-3 sentences.",
+    "response": "Tides on Earth are primarily caused by the gravitational pull of the Moon on our oceans, with the Sun also contributing significantly due to its gravity. Earth's rotation causes the tidal bulges to move, resulting in the rising and falling sea levels we observe.",
+    "time_seconds": 57.41,
+    "completion_tokens": 298,
+    "tokens_per_second": 5.19,
+    "subjective_quality_1_to_5": null
+  },
+  {
+    "model": "qwen3:4b",
+    "category": "reasoning",
+    "prompt": "If a train travels 120km in 1.5 hours and then 80km in 1 hour, what is the average speed?",
+    "response": "",
+    "time_seconds": 77.33,
+    "completion_tokens": 400,
+    "tokens_per_second": 5.17,
+    "subjective_quality_1_to_5": null
+  },
+  {
+    "model": "qwen3:4b",
+    "category": "summarization",
+    "prompt": "Summarize in 2 sentences: Large language models can draft and summarize but may hallucinate facts.",
+    "response": "Large language models can effectively draft and summarize text. However, they may hallucinate facts, producing inaccurate information.",
+    "time_seconds": 53.16,
+    "completion_tokens": 276,
+    "tokens_per_second": 5.19,
+    "subjective_quality_1_to_5": null
+  },
+  {
+    "model": "qwen3:4b",
+    "category": "structured",
+    "prompt": "List 3 European capitals. Respond ONLY with valid JSON: [{\"city\":\"...\",\"country\":\"...\"}]",
+    "response": "",
+    "time_seconds": 70.75,
+    "completion_tokens": 400,
+    "tokens_per_second": 5.65,
+    "subjective_quality_1_to_5": null
+  },
+  {
+    "model": "qwen3:4b",
+    "category": "code",
+    "prompt": "Write a Python function that checks if a string is a palindrome.",
+    "response": "",
+    "time_seconds": 69.44,
+    "completion_tokens": 400,
+    "tokens_per_second": 5.76,
+    "subjective_quality_1_to_5": null
+  },
+  {
+    "model": "qwen3:4b",
+    "category": "instruction",
+    "prompt": "Respond with exactly 3 bullet points about cybersecurity best practices.",
+    "response": "",
+    "time_seconds": 68.75,
+    "completion_tokens": 400,
+    "tokens_per_second": 5.82,
+    "subjective_quality_1_to_5": null
+  }
+]

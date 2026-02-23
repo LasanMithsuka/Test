@@ -1,0 +1,132 @@
+[
+{
+"id": "q01",
+"question": "What is the password change policy?",
+"expected_answer": "Passwords must be changed every 90 days.",
+"source_document": "security_policy.pdf",
+"difficulty": "easy",
+"type": "factual"
+},
+{
+"id": "q02",
+"question": "What triggers an immediate password reset?",
+"expected_answer": "A suspected compromise triggers a forced reset.",
+"source_document": "security_policy.pdf",
+"difficulty": "easy",
+"type": "factual"
+},
+{
+"id": "q03",
+"question": "What password complexity rules are required?",
+"expected_answer": "Passwords must be at least 16 characters.",
+"source_document": "security_policy.pdf",
+"difficulty": "easy",
+"type": "factual"
+},
+{
+"id": "q04",
+"question": "What document describes company policies?",
+"expected_answer": "The company handbook.",
+"source_document": "company_handbook.pdf",
+"difficulty": "easy",
+"type": "factual"
+},
+{
+"id": "q05",
+"question": "What information is in the quarterly report?",
+"expected_answer": "Business performance for the quarter.",
+"source_document": "quarterly_report_q1_2026.pdf",
+"difficulty": "easy",
+"type": "factual"
+},
+{
+"id": "q06",
+"question": "Summarize the password policy.",
+"difficulty": "medium",
+"type": "summary"
+},
+{
+"id": "q07",
+"question": "What security practices are recommended?",
+"difficulty": "medium",
+"type": "analysis"
+},
+{
+"id": "q08",
+"question": "What does the product guide explain?",
+"difficulty": "medium",
+"type": "factual"
+},
+{
+"id": "q09",
+"question": "What meeting topics are discussed?",
+"difficulty": "medium",
+"type": "analysis"
+},
+{
+"id": "q10",
+"question": "Compare security policy and handbook.",
+"difficulty": "medium",
+"type": "comparison"
+},
+{
+"id": "q11",
+"question": "Does the company allow unlimited vacation?",
+"difficulty": "hard",
+"type": "unanswerable"
+},
+{
+"id": "q12",
+"question": "What cloud provider does the company use?",
+"difficulty": "hard",
+"type": "unanswerable"
+},
+{
+"id": "q13",
+"question": "What AI tools are used internally?",
+"difficulty": "hard",
+"type": "unanswerable"
+},
+{
+"id": "q14",
+"question": "What are the key points of the meeting notes?",
+"difficulty": "medium",
+"type": "summary"
+},
+{
+"id": "q15",
+"question": "Explain the company security philosophy.",
+"difficulty": "medium",
+"type": "analysis"
+},
+{
+"id": "q16",
+"question": "What business updates appear in the quarterly report?",
+"difficulty": "medium",
+"type": "analysis"
+},
+{
+"id": "q17",
+"question": "What products are described in the guide?",
+"difficulty": "medium",
+"type": "factual"
+},
+{
+"id": "q18",
+"question": "What risks are mentioned in the documents?",
+"difficulty": "hard",
+"type": "analysis"
+},
+{
+"id": "q19",
+"question": "Does the company mention blockchain?",
+"difficulty": "hard",
+"type": "unanswerable"
+},
+{
+"id": "q20",
+"question": "What policies protect company data?",
+"difficulty": "medium",
+"type": "analysis"
+}
+]
