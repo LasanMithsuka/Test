@@ -1,0 +1,302 @@
+[
+  {
+    "id": "q01",
+    "question": "What is the password change policy?",
+    "expected_answer": "Passwords must be changed every 90 days.",
+    "actual_answer": "The current password change policy mandates that all system passwords be changed every 90 days. However, this policy is being reviewed, with concerns raised about its effectiveness due to the introduction of Multi-Factor Authentication (MFA). The revised policy may involve stricter rotation schedules for certain credentials (e.g., engineering team infrastructure credentials) while maintaining the requirement for passwords to meet complexity standards (16+ characters, no reuse of last 10 passwords) and triggering immediate resets for suspected compromises. The exact frequency of password changes is not explicitly stated, but the focus is on reducing frequent rotation to avoid weaker passwords, as recommended by NIST SP 800-63B when MFA is in place.",
+    "retrieved_context": [
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless.",
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless."
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 7507,
+    "generation_time_ms": 61999
+  },
+  {
+    "id": "q02",
+    "question": "What triggers an immediate password reset?",
+    "expected_answer": "A suspected compromise triggers a forced reset.",
+    "actual_answer": "The immediate password reset is triggered by **any suspected compromise** of the password. This is outlined in the context: \"any suspected compromise would trigger an immediate forced reset.\"",
+    "retrieved_context": [
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless.",
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless."
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2241,
+    "generation_time_ms": 17806
+  },
+  {
+    "id": "q03",
+    "question": "What password complexity rules are required?",
+    "expected_answer": "Passwords must be at least 16 characters.",
+    "actual_answer": "The password complexity requirements specified in the context are:  \n1. **Minimum length of 16 characters**.  \n2. **No reuse of the last 10 passwords**.  \n\nThese rules are outlined in the context as part of the password policy.",
+    "retrieved_context": [
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless.",
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless.",
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2161,
+    "generation_time_ms": 33405
+  },
+  {
+    "id": "q04",
+    "question": "What document describes company policies?",
+    "expected_answer": "The company handbook.",
+    "actual_answer": "The document that describes company policies is the **\"Handbook\"** mentioned in the context. It outlines policies related to safeguarding confidentiality, integrity, and availability of data, applicable to all employees, contractors, and third-party service providers. The handbook also specifies procedures for discontinuing policies and communicating changes.",
+    "retrieved_context": [
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "discontinue any policy in this handbook at any time, with reasonable notice to\nemployees. Material changes will be communicated via company-wide email and\nposted on the intranet.\nNovaTech Solutions GmbH Leopoldstraße 120, 80802 Munich, Germany\nHandelsregister: HRB 231847 (Amtsgericht Munich) Geschäftsführer: Sarah Chen\n(CEO), Marcus Weber (CTO), Priya Anand (CFO)\nFor questions about this handbook, contact: hr@novatech-solutions.com\n1. \n2. \n3. \n4.",
+      "discontinue any policy in this handbook at any time, with reasonable notice to\nemployees. Material changes will be communicated via company-wide email and\nposted on the intranet.\nNovaTech Solutions GmbH Leopoldstraße 120, 80802 Munich, Germany\nHandelsregister: HRB 231847 (Amtsgericht Munich) Geschäftsführer: Sarah Chen\n(CEO), Marcus Weber (CTO), Priya Anand (CFO)\nFor questions about this handbook, contact: hr@novatech-solutions.com\n1. \n2. \n3. \n4."
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2417,
+    "generation_time_ms": 43325
+  },
+  {
+    "id": "q05",
+    "question": "What information is in the quarterly report?",
+    "expected_answer": "Business performance for the quarter.",
+    "actual_answer": "I cannot find this information in the provided documents.",
+    "retrieved_context": [
+      "Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.",
+      "Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.",
+      "the EMEA region?\"\nNLQ translates natural language into NEL expressions and generates a\nvisualization\nAccuracy rate of approximately 87% on standard analytical queries (based\non internal benchmarking)\nUsers can refine generated queries and save them as dashboard widgets\n3.3 Insight Reporting\nInsight offers scheduled report generation and distribution:\nPixel-perfect reports: Design paginated reports with headers, footers,\npage numbers, and cover pages for formal distribution\nBurst reports: Automatically generate per-recipient versions of a report",
+      "the EMEA region?\"\nNLQ translates natural language into NEL expressions and generates a\nvisualization\nAccuracy rate of approximately 87% on standard analytical queries (based\non internal benchmarking)\nUsers can refine generated queries and save them as dashboard widgets\n3.3 Insight Reporting\nInsight offers scheduled report generation and distribution:\nPixel-perfect reports: Design paginated reports with headers, footers,\npage numbers, and cover pages for formal distribution\nBurst reports: Automatically generate per-recipient versions of a report"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 3095,
+    "generation_time_ms": 32150
+  },
+  {
+    "id": "q06",
+    "question": "Summarize the password policy.",
+    "expected_answer": "The password policy requires passwords to be at least 16 characters, changed every 90 days, and reset immediately if compromise is suspected.",
+    "actual_answer": "The password policy mandates changes every 90 days but is being reviewed due to concerns about its effectiveness. NIST SP 800-63B (2024) advises against frequent password changes when Multi-Factor Authentication (MFA) is in place, as it leads to weaker passwords (e.g., predictable patterns like \"Summer2026!\"). The updated policy requires:  \n- **Minimum 12 characters** with uppercase, lowercase, numbers, and special characters.  \n- **Password history** blocking the last 10 passwords to prevent reuse.  \n- **Session management** with expiration after 8 hours of inactivity and a maximum of 3, 5, or 10 concurrent sessions depending on the tier.  \nThe review aims to align with NIST guidelines and address the risks of frequent rotation.",
+    "retrieved_context": [
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "SSO via SAML 2.0 (Professional and Enterprise), OIDC (Enterprise), SCIM\nprovisioning (Enterprise)\nAuthorization: Role-based access control (RBAC) with project-level, team-\nlevel, and organization-level scopes\nSession management: Sessions expire after 8 hours of inactivity.\nMaximum concurrent sessions: 3 (Starter), 5 (Professional), 10 (Enterprise).\nPassword policy: Minimum 12 characters, must include uppercase,\nlowercase, number, and special character. Password history: last 10\npasswords blocked.\n11.4 Infrastructure Security",
+      "SSO via SAML 2.0 (Professional and Enterprise), OIDC (Enterprise), SCIM\nprovisioning (Enterprise)\nAuthorization: Role-based access control (RBAC) with project-level, team-\nlevel, and organization-level scopes\nSession management: Sessions expire after 8 hours of inactivity.\nMaximum concurrent sessions: 3 (Starter), 5 (Professional), 10 (Enterprise).\nPassword policy: Minimum 12 characters, must include uppercase,\nlowercase, number, and special character. Password history: last 10\npasswords blocked.\n11.4 Infrastructure Security"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 1931,
+    "generation_time_ms": 101199
+  },
+  {
+    "id": "q07",
+    "question": "What security practices are recommended?",
+    "expected_answer": "Recommended practices include using strong passwords, changing them regularly, resetting them after suspected compromise, and following company security guidelines.",
+    "actual_answer": "The security practices recommended include:  \n1. **Annual 4-hour security awareness training (online, self-paced)**  \n2. **Quarterly phishing simulations with department-level reporting**  \n3. **Mandatory completion of training within 30 days of onboarding**  \n4. **Escalation to department heads after 2 reminders for non-completion**  \n5. **Additional secure coding practices and dependency management module for engineering team**  \n\nThese measures aim to enhance employee awareness, prevent phishing attacks, and ensure compliance with security protocols.",
+    "retrieved_context": [
+      "breach, but one was a close call -- an employee in Sales clicked a credential\nharvesting link but MFA prevented access).\nProposal details: - Annual 4-hour security awareness training (online, self-\npaced) - Quarterly phishing simulations with department-level reporting -\nMandatory completion within 30 days of onboarding for new hires - Non-\ncompletion escalated to department heads after 2 reminders\nMarcus strongly supported this and added that the engineering team should have\nan additional module covering secure coding practices and dependency",
+      "breach, but one was a close call -- an employee in Sales clicked a credential\nharvesting link but MFA prevented access).\nProposal details: - Annual 4-hour security awareness training (online, self-\npaced) - Quarterly phishing simulations with department-level reporting -\nMandatory completion within 30 days of onboarding for new hires - Non-\ncompletion escalated to department heads after 2 reminders\nMarcus strongly supported this and added that the engineering team should have\nan additional module covering secure coding practices and dependency",
+      "before a final price point is set. T arget implementation date remains Q3 2026.\n3. Security Training Mandate\nAisha presented a proposal for mandatory security awareness training for all\nemployees, prompted by two phishing incidents in January (neither resulted in a",
+      "before a final price point is set. T arget implementation date remains Q3 2026.\n3. Security Training Mandate\nAisha presented a proposal for mandatory security awareness training for all\nemployees, prompted by two phishing incidents in January (neither resulted in a"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2310,
+    "generation_time_ms": 43492
+  },
+  {
+    "id": "q08",
+    "question": "What does the product guide explain?",
+    "expected_answer": "The product guide explains how to use the company’s products, including features, setup, and usage instructions.",
+    "actual_answer": "The product guide explains the classification of data into three levels:  \n1. **Public**: Disclosure poses no risk to the company.  \n2. **Internal**: Intended for general use within NovaTech but not for external distribution. It includes non-sensitive project documents, internal communications, and process guides that do not reference customer data. Unauthorized disclosure could cause minor inconvenience but not material harm.  \n3. **Confidential**: Information that, if disclosed without authorization, could cause harm.  \n\nIt also details sharing and export policies for dashboards in NovaTech Insight, which is a superset of ProjectHub's features.",
+    "retrieved_context": [
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "resources)\nRefresh interval: Every 30 minutes\nSharing: Dashboards can be shared with project members via link. View-\nonly access for stakeholders outside the project (requires Professional or\nEnterprise tier).\nExport: Screenshot (PNG) and PDF export of the dashboard view\nMaximum of 3 shared dashboards per project (Starter), 10 per project\n(Professional), unlimited (Enterprise)\n4.2 In NovaTech Insight\nThe Shared Analytics Dashboard in Insight is a superset of the ProjectHub\nversion:\nAll 8 ProjectHub widgets plus the full library of 30+ visualization types",
+      "resources)\nRefresh interval: Every 30 minutes\nSharing: Dashboards can be shared with project members via link. View-\nonly access for stakeholders outside the project (requires Professional or\nEnterprise tier).\nExport: Screenshot (PNG) and PDF export of the dashboard view\nMaximum of 3 shared dashboards per project (Starter), 10 per project\n(Professional), unlimited (Enterprise)\n4.2 In NovaTech Insight\nThe Shared Analytics Dashboard in Insight is a superset of the ProjectHub\nversion:\nAll 8 ProjectHub widgets plus the full library of 30+ visualization types"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2465,
+    "generation_time_ms": 54077
+  },
+  {
+    "id": "q09",
+    "question": "What meeting topics are discussed?",
+    "expected_answer": "The meeting notes discuss project updates, risks/issues, and next steps/action items.",
+    "actual_answer": "The context mentions a leadership team meeting scheduled for **April 2, 2026**, but does not specify the exact topics discussed during the meeting. The details provided are limited to the meeting date and the approval process by Sarah Chen. No further information about the topics is available in the provided documents.",
+    "retrieved_context": [
+      "leadership | James | Mar 15 |\nNext leadership team meeting scheduled for April 2, 2026.\nThese notes were reviewed and approved by Sarah Chen on the respective dates.",
+      "leadership | James | Mar 15 |\nNext leadership team meeting scheduled for April 2, 2026.\nThese notes were reviewed and approved by Sarah Chen on the respective dates.",
+      "Raising a Grievance\nEmployees who have a concern about their treatment at work, their working\nconditions, or a colleague's behavior should first attempt to resolve the matter\ninformally with their manager. If the concern involves the manager, or if informal",
+      "Raising a Grievance\nEmployees who have a concern about their treatment at work, their working\nconditions, or a colleague's behavior should first attempt to resolve the matter\ninformally with their manager. If the concern involves the manager, or if informal"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2228,
+    "generation_time_ms": 28204
+  },
+  {
+    "id": "q10",
+    "question": "Compare security policy and handbook.",
+    "expected_answer": "The security policy focuses on security requirements like password rules and data protection, while the handbook covers broader company policies and employee guidelines.",
+    "actual_answer": "A **security policy** and a **handbook** serve complementary roles in an organization's security framework:\n\n1. **Security Policy**:\n   - **Purpose**: Defines the principles, standards, and requirements for protecting information assets (e.g., confidentiality, integrity, availability). It outlines the scope, stakeholders, and overarching guidelines (e.g., \"all employees must encrypt data\").\n   - **Content**: Includes objectives, scope, responsibilities, and compliance requirements. It may specify rules (e.g., \"access to sensitive data requires dual authentication\") and principles (e.g., \"data must be protected at rest and in transit\").\n   - **Role**: Provides the \"why\" and \"what\" of security practices, serving as the foundation for compliance and operational standards.\n\n2. **Handbook**:\n   - **Purpose**: Details specific procedures, steps, and guidelines for implementing the policy. It focuses on \"how\" to follow the policy (e.g., \"employees must use encrypted email for sensitive communications\").\n   - **Content**: Includes actionable instructions, checklists, compliance checks, and troubleshooting steps. It may include templates (e.g., \"incident response form\"), training materials, and operational protocols.\n   - **Role**: Offers practical guidance for employees, ensuring consistent execution of security policies.\n\n**Key Difference**:  \n- The **policy** is strategic and foundational, while the **handbook** is operational and implementation-focused.  \n- The policy sets the framework, and the handbook provides the \"how-to\" for compliance.  \n\nIn the provided context, the policy outlines the scope and purpose, while the handbook (not explicitly shown) would detail specific procedures for adhering to those principles.",
+    "retrieved_context": [
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "NovaTech Solutions — Information\nSecurity Policy\nDocument ID: NT-ISP-2025-003 Version: 3.2 Effective Date: January 15, 2025 \nLast Reviewed: January 10, 2025 Next Review Date: July 15, 2025 \nClassification: Internal Owner: Chief Information Security Officer (CISO) \nApproved By: Executive Leadership T eam\n1. Purpose and Scope\n1.1 Purpose\nThis Information Security Policy establishes the security requirements, standards,\nand procedures that govern the protection of information assets at NovaT ech\nSolutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the",
+      "NovaTech Solutions — Information\nSecurity Policy\nDocument ID: NT-ISP-2025-003 Version: 3.2 Effective Date: January 15, 2025 \nLast Reviewed: January 10, 2025 Next Review Date: July 15, 2025 \nClassification: Internal Owner: Chief Information Security Officer (CISO) \nApproved By: Executive Leadership T eam\n1. Purpose and Scope\n1.1 Purpose\nThis Information Security Policy establishes the security requirements, standards,\nand procedures that govern the protection of information assets at NovaT ech\nSolutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 1860,
+    "generation_time_ms": 94045
+  },
+  {
+    "id": "q11",
+    "question": "Does the company allow unlimited vacation?",
+    "expected_answer": "I don’t know based on the provided documents.",
+    "actual_answer": "I cannot find this information in the provided documents.",
+    "retrieved_context": [
+      "Travel\nFlights: All flight bookings must be made through the company's preferred\ntravel platform (currently TravelPerk). Economy class is the standard for flights\nunder six (6) hours. Premium economy may be booked for flights exceeding six\n(6) hours. Business class requires VP-level pre-approval and is generally reserved\nfor C-level executives and client-facing travel where the flight exceeds eight (8)\nhours.\nPre-approval requirement: Any single flight booking exceeding €500 requires\npre-approval from the employee's manager via NovaExpense before booking.",
+      "Travel\nFlights: All flight bookings must be made through the company's preferred\ntravel platform (currently TravelPerk). Economy class is the standard for flights\nunder six (6) hours. Premium economy may be booked for flights exceeding six\n(6) hours. Business class requires VP-level pre-approval and is generally reserved\nfor C-level executives and client-facing travel where the flight exceeds eight (8)\nhours.\nPre-approval requirement: Any single flight booking exceeding €500 requires\npre-approval from the employee's manager via NovaExpense before booking.",
+      "Marcus supported the change and noted that the IT infrastructure already\nsupports full remote -- VPN capacity was expanded in 2024 and all employees\nhave company laptops. No additional investment needed.\nDecision: Remote work policy updated to allow up to 4 days remote per week,\neffective Q3 2026. T uesday remains the mandatory in-office day company-wide.\nDepartment heads may set additional in-office requirements with HR approval.\nAisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review",
+      "Marcus supported the change and noted that the IT infrastructure already\nsupports full remote -- VPN capacity was expanded in 2024 and all employees\nhave company laptops. No additional investment needed.\nDecision: Remote work policy updated to allow up to 4 days remote per week,\neffective Q3 2026. T uesday remains the mandatory in-office day company-wide.\nDepartment heads may set additional in-office requirements with HR approval.\nAisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 1892,
+    "generation_time_ms": 32550
+  },
+  {
+    "id": "q12",
+    "question": "What cloud provider does the company use?",
+    "expected_answer": "I don’t know based on the provided documents.",
+    "actual_answer": "I cannot find this information in the provided documents.",
+    "retrieved_context": [
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.",
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.",
+      "applications, and data repositories operated by or on behalf of NovaT ech,\nincluding cloud-hosted infrastructure, on-premises systems, and employee\nendpoints.\n1.3 Policy Authority\nThe Chief Information Security Officer (CISO) is the designated authority for the\ninterpretation, implementation, and enforcement of this policy. Exceptions to any\nprovision of this policy must be formally requested through the Security\nException Request process (NT-SER-Form-01) and approved by the CISO or their\ndelegate. All approved exceptions are logged in the Exception Register and\nreviewed quarterly.",
+      "applications, and data repositories operated by or on behalf of NovaT ech,\nincluding cloud-hosted infrastructure, on-premises systems, and employee\nendpoints.\n1.3 Policy Authority\nThe Chief Information Security Officer (CISO) is the designated authority for the\ninterpretation, implementation, and enforcement of this policy. Exceptions to any\nprovision of this policy must be formally requested through the Security\nException Request process (NT-SER-Form-01) and approved by the CISO or their\ndelegate. All approved exceptions are logged in the Exception Register and\nreviewed quarterly."
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 1837,
+    "generation_time_ms": 38969
+  },
+  {
+    "id": "q13",
+    "question": "What AI tools are used internally?",
+    "expected_answer": "I don’t know based on the provided documents.",
+    "actual_answer": "I cannot find this information in the provided documents.",
+    "retrieved_context": [
+      "internal tool preference\nTotal at-risk ARR: EUR 420K (2.3% of total ARR).\nCustomer Success has initiated executive-level engagement for all three\naccounts. Gruber Manufacturing has been assigned a dedicated solutions\narchitect to support the new CTO's evaluation process. Rheinland Utilities is\nbeing offered a 12-month commitment at a 10% discount in exchange for\nmaintaining Enterprise-tier service levels. Alpen Logistics has been enrolled in",
+      "internal tool preference\nTotal at-risk ARR: EUR 420K (2.3% of total ARR).\nCustomer Success has initiated executive-level engagement for all three\naccounts. Gruber Manufacturing has been assigned a dedicated solutions\narchitect to support the new CTO's evaluation process. Rheinland Utilities is\nbeing offered a 12-month commitment at a 10% discount in exchange for\nmaintaining Enterprise-tier service levels. Alpen Logistics has been enrolled in",
+      "NovaLearn portal. Approval is generally granted for any learning activity that is\nrelevant to the employee's current role or a realistic future role within NovaT ech.\nInternal Learning\nNovaT ech organizes the following internal learning activities:\nTech Talks (bi-weekly): 30-minute presentations by employees on\ntechnical topics, held on alternating Wednesdays at 16:00 CET.\nProduct Academy (monthly): Deep-dive sessions on NovaT ech\nProjectHub and NovaT ech Insight features, led by product managers.\nLeadership Development Program: A six-month program for employees",
+      "NovaLearn portal. Approval is generally granted for any learning activity that is\nrelevant to the employee's current role or a realistic future role within NovaT ech.\nInternal Learning\nNovaT ech organizes the following internal learning activities:\nTech Talks (bi-weekly): 30-minute presentations by employees on\ntechnical topics, held on alternating Wednesdays at 16:00 CET.\nProduct Academy (monthly): Deep-dive sessions on NovaT ech\nProjectHub and NovaT ech Insight features, led by product managers.\nLeadership Development Program: A six-month program for employees"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2184,
+    "generation_time_ms": 27191
+  },
+  {
+    "id": "q14",
+    "question": "What are the key points of the meeting notes?",
+    "expected_answer": "Key points include the main updates discussed, any identified risks/issues, and the agreed next steps or action items.",
+    "actual_answer": "The key points of the meeting notes are:  \n1. **Next Leadership Team Meeting**: Scheduled for **April 2, 2026**.  \n2. **Approval**: The notes were reviewed and approved by **Sarah Chen** on the respective dates.  \n\nThese details focus on the upcoming leadership meeting and the approval process, with additional context about broader employment reviews (e.g., quarterly check-ins and annual formal reviews) mentioned in the provided documents.",
+    "retrieved_context": [
+      "leadership | James | Mar 15 |\nNext leadership team meeting scheduled for April 2, 2026.\nThese notes were reviewed and approved by Sarah Chen on the respective dates.",
+      "leadership | James | Mar 15 |\nNext leadership team meeting scheduled for April 2, 2026.\nThese notes were reviewed and approved by Sarah Chen on the respective dates.",
+      "Values alignment: A brief discussion of how the employee has\ndemonstrated NovaT ech's core values.\nDevelopment goals: Review of professional development activities and\nskills growth.\nFeedback exchange: Bidirectional feedback — the employee also\nprovides feedback on management and team dynamics.\nQuarterly check-ins are documented in NovaHR. They are developmental in\nnature and do not directly determine compensation changes.\nAnnual Formal Review\nThe annual formal review takes place in December of each calendar year. It\nsynthesizes the four quarterly check-ins and produces an overall performance",
+      "Values alignment: A brief discussion of how the employee has\ndemonstrated NovaT ech's core values.\nDevelopment goals: Review of professional development activities and\nskills growth.\nFeedback exchange: Bidirectional feedback — the employee also\nprovides feedback on management and team dynamics.\nQuarterly check-ins are documented in NovaHR. They are developmental in\nnature and do not directly determine compensation changes.\nAnnual Formal Review\nThe annual formal review takes place in December of each calendar year. It\nsynthesizes the four quarterly check-ins and produces an overall performance"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2063,
+    "generation_time_ms": 38646
+  },
+  {
+    "id": "q15",
+    "question": "Explain the company security philosophy.",
+    "expected_answer": "The company security philosophy emphasizes protecting data by following documented policies and applying strong access controls such as strong passwords and timely resets.",
+    "actual_answer": "The company's security philosophy centers on safeguarding **confidentiality, integrity, and availability** of all data entrusted to its stakeholders. It emphasizes strict access controls, mandatory security measures (e.g., two-factor authentication with hardware keys like YubiKey), and comprehensive monitoring of compliance. The policy applies to all employees, contractors, and third-party providers, ensuring that all information systems, networks, and data repositories are protected. Violations are addressed through disciplinary action, reflecting a commitment to maintaining robust security practices and accountability.",
+    "retrieved_context": [
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "published on the company intranet.\n11. Information Technology Policies\nThe IT policies outlined below are mandatory for all employees and contractors\nwith access to NovaT ech systems. Compliance is monitored by the IT Security\nteam, and violations may result in disciplinary action.\nAccess and Authentication\nAll NovaT ech accounts must be protected by two-factor authentication\n(2FA). 2FA is mandatory — no exceptions. Hardware security keys (YubiKey)\n•",
+      "published on the company intranet.\n11. Information Technology Policies\nThe IT policies outlined below are mandatory for all employees and contractors\nwith access to NovaT ech systems. Compliance is monitored by the IT Security\nteam, and violations may result in disciplinary action.\nAccess and Authentication\nAll NovaT ech accounts must be protected by two-factor authentication\n(2FA). 2FA is mandatory — no exceptions. Hardware security keys (YubiKey)\n•"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 1837,
+    "generation_time_ms": 38547
+  },
+  {
+    "id": "q16",
+    "question": "What business updates appear in the quarterly report?",
+    "expected_answer": "The quarterly report includes updates on business performance, key results, and notable activities or changes during the quarter.",
+    "actual_answer": "I cannot find this information in the provided documents.",
+    "retrieved_context": [
+      "Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.",
+      "Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.",
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15.",
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15."
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2218,
+    "generation_time_ms": 37369
+  },
+  {
+    "id": "q17",
+    "question": "What products are described in the guide?",
+    "expected_answer": "The guide describes the company’s products and their main features and usage.",
+    "actual_answer": "I cannot find this information in the provided documents.",
+    "retrieved_context": [
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15.",
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15."
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2217,
+    "generation_time_ms": 38528
+  },
+  {
+    "id": "q18",
+    "question": "What risks are mentioned in the documents?",
+    "expected_answer": "Risks mentioned include security risks like password compromise and other risks/issues noted in the meeting notes or reports.",
+    "actual_answer": "The documents mention the following risks:\n\n1. **Public Data**: Disclosure poses no risk to the Company.  \n2. **Internal Data**: Unauthorized disclosure could cause minor inconvenience but would not result in material harm.  \n3. **Confidential Data**: Unauthorized disclosure could cause significant harm to NovaTech or its customers, including risks to customer data, financial records, employee personal data, and proprietary information.  \n4. **Restricted Data**: Unauthorized disclosure could cause significant harm, including risks to sensitive information like authentication credentials, encryption keys, and customer payment card data.  \n\nThe risks escalate in severity from minor inconvenience (Internal) to significant harm (Confidential and Restricted).",
+    "retrieved_context": [
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "harm.\nConfidential: Information that, if disclosed without authorization, could cause\nsignificant harm to NovaT ech or its customers. This includes customer data,\nfinancial records, employee personal data, proprietary source code, product\nroadmaps, pricing models, contract terms, audit reports, and security\nassessment results. Access to Confidential data is restricted to personnel with a\ndocumented business need.\nRestricted: The most sensitive category of information. This includes\nauthentication credentials, encryption keys, customer payment card data, health",
+      "harm.\nConfidential: Information that, if disclosed without authorization, could cause\nsignificant harm to NovaT ech or its customers. This includes customer data,\nfinancial records, employee personal data, proprietary source code, product\nroadmaps, pricing models, contract terms, audit reports, and security\nassessment results. Access to Confidential data is restricted to personnel with a\ndocumented business need.\nRestricted: The most sensitive category of information. This includes\nauthentication credentials, encryption keys, customer payment card data, health"
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2423,
+    "generation_time_ms": 59544
+  },
+  {
+    "id": "q19",
+    "question": "Does the company mention blockchain?",
+    "expected_answer": "I don’t know based on the provided documents.",
+    "actual_answer": "I cannot find this information in the provided documents.",
+    "retrieved_context": [
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15.",
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15.",
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.",
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com."
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2313,
+    "generation_time_ms": 33419
+  },
+  {
+    "id": "q20",
+    "question": "What policies protect company data?",
+    "expected_answer": "Company data is protected by security policies such as password requirements, regular password changes, and rules for responding to suspected compromise.",
+    "actual_answer": "The policies that protect company data include:  \n1. **Network Security Policy**:  \n   - Requires the use of a company VPN when accessing internal systems from outside the office network.  \n   - Enforces secure connections by pre-installing a VPN client (WireGuard) on all company devices.  \n   - Prohibits connecting company devices to untrusted public Wi-Fi networks without the VPN active.  \n\n2. **Data Protection and Confidentiality Policy**:  \n   - Ensures compliance with laws such as GDPR, CCPA, and other data protection regulations.  \n   - Establishes procedures for safeguarding confidential information, including data processing, storage, and transmission.  \n   - Designates a Data Protection Officer (DPO) to oversee compliance and address data privacy concerns.  \n\nThese policies collectively ensure the confidentiality, integrity, and availability of company data.",
+    "retrieved_context": [
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.",
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com."
+    ],
+    "model": "qwen3:1.7b",
+    "retrieval_time_ms": 2208,
+    "generation_time_ms": 52008
+  }
+]

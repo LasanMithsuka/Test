@@ -1,0 +1,1182 @@
+[
+  {
+    "id": "q01",
+    "model": "qwen3:1.7b",
+    "input": "What is the password change policy?",
+    "actual_output": "The current password change policy mandates that all system passwords be changed every 90 days. However, this policy is being reviewed due to concerns raised by Marcus, who argues that frequent password changes (as per the 90-day cycle) are outdated and counterproductive. The review highlights that NIST SP 800-63B (2024 revision) recommends against periodic password rotation when Multi-Factor Authentication (MFA) is in place, as it can lead to weaker passwords due to predictable patterns. The policy may be updated to address these concerns, with Aisha tasked to communicate the change by March 20.",
+    "expected_output": "Passwords must be changed every 90 days.",
+    "retrieval_context": [
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless.",
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless."
+    ],
+    "success": true,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 0.8571428571428571,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.86 because the actual output incorrectly attributes the general observation that frequent password rotation leads to weaker passwords to NIST SP 800-63B, whereas the retrieval context clarifies that NIST recommends against periodic rotation with MFA but does not explicitly state that rotation weakens passwords.",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response fully addresses the password change policy without any irrelevant information, making it clear and concise.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.6875,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.69 because while the retrieval context includes relevant statements such as 'The current IT security policy mandates password changes every 90 days for all systems.' and 'Passwords would still need to meet complexity requirements (16+ characters, no reuse of last 10 passwords)...', it also contains irrelevant information like 'Aisha to update the employee handbook and communicate the change by March 20.' which does not directly address the password change policy.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the sentence about password changes every 90 days is fully supported by the 1st and 2nd nodes in retrieval context, which explicitly state this policy, leaving no unsupported elements.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the first and second nodes in retrieval contexts, ranked highest, clearly state the password change policy of every 90 days, directly addressing the input. The third and fourth nodes, which discuss password complexity and forced resets without specifying the 90-day interval, are correctly ranked lower, ensuring all relevant information is prioritized.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 6137,
+    "generation_time_ms": 50230
+  },
+  {
+    "id": "q02",
+    "model": "qwen3:1.7b",
+    "input": "What triggers an immediate password reset?",
+    "actual_output": "The immediate password reset is triggered by **any suspected compromise** of the password. This is outlined in the context: \"any suspected compromise would trigger an immediate forced reset.\"",
+    "expected_output": "A suspected compromise triggers a forced reset.",
+    "retrieval_context": [
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless.",
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless."
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response directly addresses the question about triggers for an immediate password reset without including any irrelevant information.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.1111111111111111,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.11 because most statements, such as 'The current IT security policy mandates password changes every 90 days for all systems' and 'Marcus raised the topic of password rotation frequency,' do not address triggers for immediate password reset. Only the statement 'any suspected compromise would trigger an immediate forced reset' is relevant, indicating minimal contextual alignment.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the sentence in the expected output is fully supported by the 3rd and 4th nodes in the retrieval context, which explicitly mention that any suspected compromise would trigger an immediate forced reset. This complete alignment justifies the perfect score.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.41666666666666663,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.42 because the first and second nodes in retrieval contexts are irrelevant, discussing password rotation frequency without mentioning immediate reset triggers, while the relevant nodes appear only at ranks 3 and 4. This lowers the score since irrelevant nodes are ranked higher than relevant ones, but the presence of relevant nodes within the top four maintains the score above zero.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1859,
+    "generation_time_ms": 17358
+  },
+  {
+    "id": "q03",
+    "model": "qwen3:1.7b",
+    "input": "What password complexity rules are required?",
+    "actual_output": "The password complexity requirements specified in the context are:  \n1. **Minimum length**: 16 characters or more.  \n2. **No reuse of last 10 passwords**.  \n\nThese rules are outlined in the context as part of the policy changes.",
+    "expected_output": "Passwords must be at least 16 characters.",
+    "retrieval_context": [
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless.",
+      "Passwords would still need to meet complexity requirements (16+ characters, no\nreuse of last 10 passwords) and any suspected compromise would trigger an\nimmediate forced reset.\nAisha noted this might seem like a reduction in security to employees and we\nneed to communicate the reasoning clearly. Sarah agreed and asked Marcus to\nprepare a brief company-wide communication explaining the change.\nElena mentioned that the engineering team's infrastructure credentials (SSH\nkeys, service accounts) should remain on a stricter rotation schedule regardless.",
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")"
+    ],
+    "success": true,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 0.6666666666666666,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.67 because the actual output incorrectly separates the password requirement into '16 characters or more' as a separate condition, whereas the context specifies a single complexity requirement of at least 16 characters and no reuse of the last 10 passwords.",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 0.6666666666666666,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.67 because the response addresses password complexity rules but includes irrelevant information about password reuse policy, which detracts from full relevance.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.5,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.50 because while the retrieval context includes relevant statements such as 'Passwords would still need to meet complexity requirements (16+ characters, no reuse of last 10 passwords)' and 'The current IT security policy mandates password changes every 90 days,' a significant portion of the context is irrelevant, focusing on communication and infrastructure credentials as noted in reasons like 'The statement ... is about communication and not about password complexity rules.' This mix of relevant and irrelevant information justifies the moderate relevancy score.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the sentence about passwords needing to be at least 16 characters is fully supported by nodes 1 and 2 in the retrieval context, which explicitly mention the 16+ character complexity requirement. This complete alignment ensures a perfect recall.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the first and second nodes in retrieval contexts, ranked highest, clearly state the password complexity requirements including a minimum of 16 characters, which is directly relevant. The third and fourth nodes, ranked lower, discuss password rotation frequency and policy updates without mentioning complexity, appropriately placing irrelevant information below relevant nodes.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1821,
+    "generation_time_ms": 32829
+  },
+  {
+    "id": "q04",
+    "model": "qwen3:1.7b",
+    "input": "What document describes company policies?",
+    "actual_output": "The document describing company policies is mentioned in the context as part of NovaTech Solutions' policy handbook. Specifically, the policy is outlined in the section titled \"Solutions (\"NovaT ech,\" \"the Company\")\" and covers confidentiality, integrity, and availability of data. However, the exact name of the document (e.g., \"Policy Handbook\" or similar) is not provided in the provided text. For precise details, the user would need to refer to the company's official documentation. \n\n**Answer:** The policy is described in the context as part of NovaTech Solutions' policy handbook, but the specific document name is not mentioned in the provided text.",
+    "expected_output": "The company handbook.",
+    "retrieval_context": [
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "discontinue any policy in this handbook at any time, with reasonable notice to\nemployees. Material changes will be communicated via company-wide email and\nposted on the intranet.\nNovaTech Solutions GmbH Leopoldstraße 120, 80802 Munich, Germany\nHandelsregister: HRB 231847 (Amtsgericht Munich) Geschäftsführer: Sarah Chen\n(CEO), Marcus Weber (CTO), Priya Anand (CFO)\nFor questions about this handbook, contact: hr@novatech-solutions.com\n1. \n2. \n3. \n4.",
+      "discontinue any policy in this handbook at any time, with reasonable notice to\nemployees. Material changes will be communicated via company-wide email and\nposted on the intranet.\nNovaTech Solutions GmbH Leopoldstraße 120, 80802 Munich, Germany\nHandelsregister: HRB 231847 (Amtsgericht Munich) Geschäftsführer: Sarah Chen\n(CEO), Marcus Weber (CTO), Priya Anand (CFO)\nFor questions about this handbook, contact: hr@novatech-solutions.com\n1. \n2. \n3. \n4."
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 0.8,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.80 because the actual output references a section titled 'Solutions (\"NovaTech,\" \"the Company\")' which is not mentioned in the retrieval context, indicating a partial mismatch.",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 0.8,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.80 because the answer mostly addresses the question about the document describing company policies, but it includes a reference to a section title that does not clearly describe the document, which reduces its relevancy slightly.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.8571428571428571,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.86 because while some statements like 'The policy exists to safeguard the confidentiality, integrity, and availability of all data entrusted to NovaTech' are relevant to company policies, the presence of irrelevant information such as 'company registration and management information' reduces the overall relevancy.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the expected output directly corresponds to information in node 4 of the retrieval context, which mentions the 'policy in this handbook,' confirming the existence of the company handbook. There are no discrepancies or missing attributions, making the recall complete and accurate. Great job capturing the relevant detail precisely!",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.41666666666666663,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.42 because the first and second nodes in retrieval contexts, which are ranked highest, are irrelevant as they do not mention any document describing company policies, while the relevant nodes appear only at ranks three and four. This lowers the score since relevant nodes should be ranked higher than irrelevant ones. However, the presence of relevant nodes at ranks three and four, which reference the company handbook containing policies, prevents the score from being lower.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1921,
+    "generation_time_ms": 53272
+  },
+  {
+    "id": "q05",
+    "model": "qwen3:1.7b",
+    "input": "What information is in the quarterly report?",
+    "actual_output": "I cannot find this information in the provided documents.",
+    "expected_output": "Business performance for the quarter.",
+    "retrieval_context": [
+      "Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.",
+      "Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.",
+      "the EMEA region?\"\nNLQ translates natural language into NEL expressions and generates a\nvisualization\nAccuracy rate of approximately 87% on standard analytical queries (based\non internal benchmarking)\nUsers can refine generated queries and save them as dashboard widgets\n3.3 Insight Reporting\nInsight offers scheduled report generation and distribution:\nPixel-perfect reports: Design paginated reports with headers, footers,\npage numbers, and cover pages for formal distribution\nBurst reports: Automatically generate per-recipient versions of a report",
+      "the EMEA region?\"\nNLQ translates natural language into NEL expressions and generates a\nvisualization\nAccuracy rate of approximately 87% on standard analytical queries (based\non internal benchmarking)\nUsers can refine generated queries and save them as dashboard widgets\n3.3 Insight Reporting\nInsight offers scheduled report generation and distribution:\nPixel-perfect reports: Design paginated reports with headers, footers,\npage numbers, and cover pages for formal distribution\nBurst reports: Automatically generate per-recipient versions of a report"
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response fully addresses the question without any irrelevant information, providing a clear and concise answer about the quarterly report.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.5714285714285714,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.57 because while relevant statements like 'Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.' and 'Insight offers scheduled report generation and distribution' provide some information about the quarterly report, many irrelevant details such as 'The statement about NLQ translating natural language into NEL expressions' and 'The accuracy rate on analytical queries' dilute the overall relevancy.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because the sentence 'Business performance for the quarter.' in the expected output is not supported by any node in the retrieval context, which centers on report scheduling and features rather than actual business performance data.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input, as the first and second nodes (ranks 1 and 2) only mention the schedule of the quarterly report without detailing its content, and the third and fourth nodes (ranks 3 and 4) discuss reporting features rather than the information within the quarterly report. Since no relevant nodes are present to be ranked higher, the score cannot be higher.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1835,
+    "generation_time_ms": 32255
+  },
+  {
+    "id": "q06",
+    "model": "qwen3:1.7b",
+    "input": "Summarize the password policy.",
+    "actual_output": "The password policy specifies that employees must use passwords with a minimum of 12 characters, including uppercase, lowercase, numbers, and special characters. Passwords are blocked from being used in the last 10 passwords. The current policy mandates password changes every 90 days, but Marcus argues this is outdated and counterproductive, citing NIST SP 800-63B, which recommends against frequent rotation when Multi-Factor Authentication (MFA) is in place. He also notes that frequent changes can lead to weaker passwords due to predictable patterns. The policy is being updated to address these concerns, though the exact new rotation frequency is not specified in the context.",
+    "expected_output": "The password policy requires passwords to be at least 16 characters, changed every 90 days, and reset immediately if compromise is suspected.",
+    "retrieval_context": [
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "Aisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review\nMarcus raised the topic of password rotation frequency. The current IT security\npolicy mandates password changes every 90 days for all systems. He argued this\nis outdated and counterproductive:\nNIST SP 800-63B (2024 revision) explicitly recommends against periodic\npassword rotation when MFA is in place\nFrequent rotation leads to weaker passwords (employees use predictable\npatterns like \"Summer2026!\" then \"Autumn2026!\")",
+      "SSO via SAML 2.0 (Professional and Enterprise), OIDC (Enterprise), SCIM\nprovisioning (Enterprise)\nAuthorization: Role-based access control (RBAC) with project-level, team-\nlevel, and organization-level scopes\nSession management: Sessions expire after 8 hours of inactivity.\nMaximum concurrent sessions: 3 (Starter), 5 (Professional), 10 (Enterprise).\nPassword policy: Minimum 12 characters, must include uppercase,\nlowercase, number, and special character. Password history: last 10\npasswords blocked.\n11.4 Infrastructure Security",
+      "SSO via SAML 2.0 (Professional and Enterprise), OIDC (Enterprise), SCIM\nprovisioning (Enterprise)\nAuthorization: Role-based access control (RBAC) with project-level, team-\nlevel, and organization-level scopes\nSession management: Sessions expire after 8 hours of inactivity.\nMaximum concurrent sessions: 3 (Starter), 5 (Professional), 10 (Enterprise).\nPassword policy: Minimum 12 characters, must include uppercase,\nlowercase, number, and special character. Password history: last 10\npasswords blocked.\n11.4 Infrastructure Security"
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 0.75,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.75 because the response includes relevant information summarizing the password policy, but it also contains irrelevant elements such as opinions about the policy, citations of external guidance, and arguments about password changes, which detract from a concise summary.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.4,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.40 because while relevant statements like 'Password policy: Minimum 12 characters, must include uppercase, lowercase, number, and special character' and 'The current IT security policy mandates password changes every 90 days for all systems' directly address the password policy, a majority of the context is irrelevant, such as 'SSO via SAML 2.0' and 'Session management: Sessions expire after 8 hours of inactivity,' which do not pertain to the password policy.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because the expected output specifies a password policy requiring at least 16 characters and immediate reset upon suspected compromise, which is not supported by the retrieval context nodes that only mention a minimum of 12 characters and password changes every 90 days without the full details.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the nodes in retrieval contexts that are relevant are ranked higher than the irrelevant ones. Specifically, the first and second nodes clearly state the password change frequency of every 90 days, which matches the input requirement, while the third and fourth nodes, ranked lower, mention different password length requirements and lack key details, making them less aligned with the input. This perfect ordering ensures the highest contextual precision.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1830,
+    "generation_time_ms": 70056
+  },
+  {
+    "id": "q07",
+    "model": "qwen3:1.7b",
+    "input": "What security practices are recommended?",
+    "actual_output": "The security practices recommended in the context include:  \n1. **Multi-Factor Authentication (MFA)** to prevent unauthorized access.  \n2. **Annual security awareness training** (online, self-paced).  \n3. **Quarterly phishing simulations** with department-level reporting.  \n4. **Mandatory completion** of training within 30 days of onboarding.  \n5. **Escalation for non-completion** to department heads after two reminders.  \n6. **Secure coding practices and dependency modules** for the engineering team.  \n\nThese measures aim to enhance employee awareness, prevent phishing attacks, and ensure compliance with security protocols.",
+    "expected_output": "Recommended practices include annual security awareness training, quarterly phishing simulations, mandatory completion within 30 days of onboarding, escalation after reminders, and secure coding training for engineers.",
+    "retrieval_context": [
+      "breach, but one was a close call -- an employee in Sales clicked a credential\nharvesting link but MFA prevented access).\nProposal details: - Annual 4-hour security awareness training (online, self-\npaced) - Quarterly phishing simulations with department-level reporting -\nMandatory completion within 30 days of onboarding for new hires - Non-\ncompletion escalated to department heads after 2 reminders\nMarcus strongly supported this and added that the engineering team should have\nan additional module covering secure coding practices and dependency",
+      "breach, but one was a close call -- an employee in Sales clicked a credential\nharvesting link but MFA prevented access).\nProposal details: - Annual 4-hour security awareness training (online, self-\npaced) - Quarterly phishing simulations with department-level reporting -\nMandatory completion within 30 days of onboarding for new hires - Non-\ncompletion escalated to department heads after 2 reminders\nMarcus strongly supported this and added that the engineering team should have\nan additional module covering secure coding practices and dependency",
+      "3. Security Training Mandate\nAisha presented a proposal for mandatory security awareness training for all\nemployees, prompted by two phishing incidents in January (neither resulted in a",
+      "3. Security Training Mandate\nAisha presented a proposal for mandatory security awareness training for all\nemployees, prompted by two phishing incidents in January (neither resulted in a"
+    ],
+    "success": true,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response fully addresses the question about recommended security practices without including any irrelevant information. It is clear, focused, and directly relevant to the input.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.9333333333333333,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.93 because most statements like 'Annual 4-hour security awareness training (online, self-paced)' and 'Quarterly phishing simulations with department-level reporting' directly recommend security practices, while the incident 'An employee in Sales clicked a credential harvesting link but MFA prevented access' is noted as irrelevant since it describes an event rather than a practice.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because all elements of the expected output are directly supported by node(s) in the retrieval context, specifically the 1st and 2nd nodes, which mention annual security awareness training, quarterly phishing simulations, mandatory completion timelines, escalation procedures, and secure coding training for engineers. This comprehensive alignment ensures a perfect contextual recall.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the first and second nodes in retrieval contexts, which are highly relevant and contain detailed recommended security practices, are ranked above the third and fourth nodes that only mention proposals or partial information without the full details. This perfect ordering ensures all relevant information is prioritized, resulting in an excellent contextual precision score.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 2616,
+    "generation_time_ms": 47681
+  },
+  {
+    "id": "q08",
+    "model": "qwen3:1.7b",
+    "input": "What does the product guide explain?",
+    "actual_output": "The product guide explains the classification of data into three levels:  \n1. **Public**: Data that can be disclosed without risk to the company.  \n2. **Internal**: Information intended for use within NovaTech but not for external distribution, such as internal communications, process guides, and meeting notes.  \n3. **Confidential**: Data that, if disclosed without authorization, could cause harm or inconvenience.  \n\nIt also details sharing and export policies, including limitations on shared dashboards (e.g., 3 per project for Starter, 10 for Professional, unlimited for Enterprise) and the features of the Shared Analytics Dashboard in NovaTech Insight, which extends beyond ProjectHub's widgets and visualization types.",
+    "expected_output": "The product guide explains how to use the company’s products, including features, setup, and usage instructions.",
+    "retrieval_context": [
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "resources)\nRefresh interval: Every 30 minutes\nSharing: Dashboards can be shared with project members via link. View-\nonly access for stakeholders outside the project (requires Professional or\nEnterprise tier).\nExport: Screenshot (PNG) and PDF export of the dashboard view\nMaximum of 3 shared dashboards per project (Starter), 10 per project\n(Professional), unlimited (Enterprise)\n4.2 In NovaTech Insight\nThe Shared Analytics Dashboard in Insight is a superset of the ProjectHub\nversion:\nAll 8 ProjectHub widgets plus the full library of 30+ visualization types",
+      "resources)\nRefresh interval: Every 30 minutes\nSharing: Dashboards can be shared with project members via link. View-\nonly access for stakeholders outside the project (requires Professional or\nEnterprise tier).\nExport: Screenshot (PNG) and PDF export of the dashboard view\nMaximum of 3 shared dashboards per project (Starter), 10 per project\n(Professional), unlimited (Enterprise)\n4.2 In NovaTech Insight\nThe Shared Analytics Dashboard in Insight is a superset of the ProjectHub\nversion:\nAll 8 ProjectHub widgets plus the full library of 30+ visualization types"
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 0.8571428571428571,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.86 because the actual output incorrectly states that the Shared Analytics Dashboard extends beyond ProjectHub's widgets and visualization types, while the contradiction clarifies it includes all 8 ProjectHub widgets plus over 30 visualization types, meaning it fully encompasses rather than extends beyond them.",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 0.6,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.60 because the response includes relevant explanations about data classification and policies as per the product guide, but it also contains several unrelated statements about dashboard limitations and features that do not address the input question, preventing a higher score.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.047619047619047616,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.05 because the reasons for irrelevancy highlight that most statements, such as those about 'Disclosure of Public data' and dashboard features, do not explain what the product guide explains, while the only relevant statement is simply 'product documentation.', which is too vague to provide meaningful context.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because none of the nodes in the retrieval context mention a product guide or provide any information about using the company's products, features, setup, or usage instructions, making it impossible to attribute the expected output to the context.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input; for example, the first node discusses data classification and internal documentation policies, which does not explain what the product guide explains. Since no relevant nodes are present, none can be ranked higher than irrelevant ones, resulting in the lowest possible score.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1857,
+    "generation_time_ms": 49188
+  },
+  {
+    "id": "q09",
+    "model": "qwen3:1.7b",
+    "input": "What meeting topics are discussed?",
+    "actual_output": "I cannot find this information in the provided documents.",
+    "expected_output": "The meeting notes discuss project updates, risks/issues, and next steps/action items.",
+    "retrieval_context": [
+      "leadership | James | Mar 15 |",
+      "leadership | James | Mar 15 |",
+      "Raising a Grievance\nEmployees who have a concern about their treatment at work, their working\nconditions, or a colleague's behavior should first attempt to resolve the matter\ninformally with their manager. If the concern involves the manager, or if informal",
+      "Raising a Grievance\nEmployees who have a concern about their treatment at work, their working\nconditions, or a colleague's behavior should first attempt to resolve the matter\ninformally with their manager. If the concern involves the manager, or if informal"
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response fully addresses the question without any irrelevant information, providing a clear and focused answer.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.3333333333333333,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.33 because the retrieval context mainly contains incomplete statements like 'leadership | James | Mar 15 |' which do not provide information about meeting topics, while the only relevant statement about employees addressing concerns with their manager offers limited insight into meeting topics discussed.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because none of the sentences in the expected output about meeting notes and project updates are supported by any nodes in the retrieval context, which instead focus on leadership and grievance procedures.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all nodes in retrieval contexts are irrelevant, with the first node's reason stating it does not mention any meeting topics, and subsequent nodes either duplicate this irrelevance or discuss unrelated subjects like 'Raising a Grievance'. Since no relevant nodes are present to be ranked higher, the score cannot be higher.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1919,
+    "generation_time_ms": 32957
+  },
+  {
+    "id": "q10",
+    "model": "qwen3:1.7b",
+    "input": "Compare security policy and handbook.",
+    "actual_output": "The provided context outlines a **security policy** (e.g., \"NovaTech Solutions — Information Security Policy\") that defines principles, scope, and objectives for safeguarding information assets. A **handbook** would typically include **detailed procedures**, **step-by-step instructions**, and **specific protocols** to implement the policy. While the context does not explicitly mention a handbook, the policy's scope, responsibilities, and standards would be the foundation of such a document. The policy focuses on **guidelines and principles**, whereas a handbook would address **implementation details** (e.g., data encryption, access controls, incident response steps). Without a separate handbook, comparisons cannot be made based on the provided information.",
+    "expected_output": "The security policy focuses on security requirements like password rules and data protection, while the handbook covers broader company policies and employee guidelines.",
+    "retrieval_context": [
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "NovaTech Solutions — Information\nSecurity Policy\nDocument ID: NT-ISP-2025-003 Version: 3.2 Effective Date: January 15, 2025 \nLast Reviewed: January 10, 2025 Next Review Date: July 15, 2025 \nClassification: Internal Owner: Chief Information Security Officer (CISO) \nApproved By: Executive Leadership T eam\n1. Purpose and Scope\n1.1 Purpose\nThis Information Security Policy establishes the security requirements, standards,\nand procedures that govern the protection of information assets at NovaT ech\nSolutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the",
+      "NovaTech Solutions — Information\nSecurity Policy\nDocument ID: NT-ISP-2025-003 Version: 3.2 Effective Date: January 15, 2025 \nLast Reviewed: January 10, 2025 Next Review Date: July 15, 2025 \nClassification: Internal Owner: Chief Information Security Officer (CISO) \nApproved By: Executive Leadership T eam\n1. Purpose and Scope\n1.1 Purpose\nThis Information Security Policy establishes the security requirements, standards,\nand procedures that govern the protection of information assets at NovaT ech\nSolutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the"
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response fully addresses the comparison between security policy and handbook without including any irrelevant information, making it clear and focused.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the retrieval context directly addresses the security policy's purpose and scope, such as safeguarding data confidentiality and applying to all employees and systems, which aligns perfectly with the input's request to compare security policy and handbook.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because none of the nodes in retrieval context mention the security policy's focus on password rules and data protection, nor do they mention the handbook or broader company policies and employee guidelines, making it impossible to attribute any sentence in the expected output to the retrieval context.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input; for example, the first node discusses the scope of the security policy but does not compare it to the handbook, and this pattern continues through nodes ranked 2, 3, and 4, which also fail to provide any comparison or mention of the handbook. Since no relevant nodes are ranked higher than irrelevant ones, the score cannot be higher.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1871,
+    "generation_time_ms": 66466
+  },
+  {
+    "id": "q11",
+    "model": "qwen3:1.7b",
+    "input": "Does the company allow unlimited vacation?",
+    "actual_output": "I cannot find this information in the provided documents. The context does not mention any policies related to vacation allowances or unlimited leave.",
+    "expected_output": "I don’t know based on the provided documents.",
+    "retrieval_context": [
+      "Travel\nFlights: All flight bookings must be made through the company's preferred\ntravel platform (currently TravelPerk). Economy class is the standard for flights\nunder six (6) hours. Premium economy may be booked for flights exceeding six\n(6) hours. Business class requires VP-level pre-approval and is generally reserved\nfor C-level executives and client-facing travel where the flight exceeds eight (8)\nhours.\nPre-approval requirement: Any single flight booking exceeding €500 requires\npre-approval from the employee's manager via NovaExpense before booking.",
+      "Travel\nFlights: All flight bookings must be made through the company's preferred\ntravel platform (currently TravelPerk). Economy class is the standard for flights\nunder six (6) hours. Premium economy may be booked for flights exceeding six\n(6) hours. Business class requires VP-level pre-approval and is generally reserved\nfor C-level executives and client-facing travel where the flight exceeds eight (8)\nhours.\nPre-approval requirement: Any single flight booking exceeding €500 requires\npre-approval from the employee's manager via NovaExpense before booking.",
+      "Marcus supported the change and noted that the IT infrastructure already\nsupports full remote -- VPN capacity was expanded in 2024 and all employees\nhave company laptops. No additional investment needed.\nDecision: Remote work policy updated to allow up to 4 days remote per week,\neffective Q3 2026. T uesday remains the mandatory in-office day company-wide.\nDepartment heads may set additional in-office requirements with HR approval.\nAisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review",
+      "Marcus supported the change and noted that the IT infrastructure already\nsupports full remote -- VPN capacity was expanded in 2024 and all employees\nhave company laptops. No additional investment needed.\nDecision: Remote work policy updated to allow up to 4 days remote per week,\neffective Q3 2026. T uesday remains the mandatory in-office day company-wide.\nDepartment heads may set additional in-office requirements with HR approval.\nAisha to update the employee handbook and communicate the change by March\n20.\n2. Password Rotation Policy Review"
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response directly addresses the question about unlimited vacation without any irrelevant information, providing a clear and focused answer.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all reasons for irrelevancy indicate that the retrieval context discusses flight booking policies, IT infrastructure, and remote work, none of which relate to the input question about unlimited vacation policies.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because the expected output expresses uncertainty that is not supported by any information in the retrieval context nodes, as none of the nodes provide content that justifies the statement of not knowing.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all nodes in retrieval contexts are irrelevant, with the first node discussing flight booking policies and pre-approval requirements, the second being a duplicate of the first, the third covering remote work policies and IT infrastructure, and the fourth duplicating the third. Since no relevant nodes are present to be ranked higher, the score cannot be higher.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1858,
+    "generation_time_ms": 37424
+  },
+  {
+    "id": "q12",
+    "model": "qwen3:1.7b",
+    "input": "What cloud provider does the company use?",
+    "actual_output": "I cannot find this information in the provided documents.",
+    "expected_output": "I don’t know based on the provided documents.",
+    "retrieval_context": [
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.",
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.",
+      "applications, and data repositories operated by or on behalf of NovaT ech,\nincluding cloud-hosted infrastructure, on-premises systems, and employee\nendpoints.\n1.3 Policy Authority\nThe Chief Information Security Officer (CISO) is the designated authority for the\ninterpretation, implementation, and enforcement of this policy. Exceptions to any\nprovision of this policy must be formally requested through the Security\nException Request process (NT-SER-Form-01) and approved by the CISO or their\ndelegate. All approved exceptions are logged in the Exception Register and\nreviewed quarterly.",
+      "applications, and data repositories operated by or on behalf of NovaT ech,\nincluding cloud-hosted infrastructure, on-premises systems, and employee\nendpoints.\n1.3 Policy Authority\nThe Chief Information Security Officer (CISO) is the designated authority for the\ninterpretation, implementation, and enforcement of this policy. Exceptions to any\nprovision of this policy must be formally requested through the Security\nException Request process (NT-SER-Form-01) and approved by the CISO or their\ndelegate. All approved exceptions are logged in the Exception Register and\nreviewed quarterly."
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response directly addresses the question without any irrelevant information, providing a clear and concise answer.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all reasons for irrelevancy indicate that the statements focus on VPN usage, network security, data protection compliance, and policy procedures, none of which specify or relate to the cloud provider used by the company. Additionally, there are no relevant statements in the retrieval context to support the input question.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the single sentence in the expected output accurately reflects the absence of relevant information across all nodes in the retrieval context, demonstrating a perfect alignment with the provided documents.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant, with the first node discussing 'Network Security' and VPN usage without mentioning any cloud provider, and subsequent nodes either duplicating this information or mentioning 'cloud-hosted infrastructure' without specifying the provider. Since no relevant nodes are ranked higher than irrelevant ones, the score reflects this lack of relevant information.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1896,
+    "generation_time_ms": 35448
+  },
+  {
+    "id": "q13",
+    "model": "qwen3:1.7b",
+    "input": "What AI tools are used internally?",
+    "actual_output": "I cannot find this information in the provided documents.",
+    "expected_output": "I don’t know based on the provided documents.",
+    "retrieval_context": [
+      "internal tool preference\nTotal at-risk ARR: EUR 420K (2.3% of total ARR).\nCustomer Success has initiated executive-level engagement for all three\naccounts. Gruber Manufacturing has been assigned a dedicated solutions\narchitect to support the new CTO's evaluation process. Rheinland Utilities is\nbeing offered a 12-month commitment at a 10% discount in exchange for\nmaintaining Enterprise-tier service levels. Alpen Logistics has been enrolled in",
+      "internal tool preference\nTotal at-risk ARR: EUR 420K (2.3% of total ARR).\nCustomer Success has initiated executive-level engagement for all three\naccounts. Gruber Manufacturing has been assigned a dedicated solutions\narchitect to support the new CTO's evaluation process. Rheinland Utilities is\nbeing offered a 12-month commitment at a 10% discount in exchange for\nmaintaining Enterprise-tier service levels. Alpen Logistics has been enrolled in",
+      "NovaLearn portal. Approval is generally granted for any learning activity that is\nrelevant to the employee's current role or a realistic future role within NovaT ech.\nInternal Learning\nNovaT ech organizes the following internal learning activities:\nTech Talks (bi-weekly): 30-minute presentations by employees on\ntechnical topics, held on alternating Wednesdays at 16:00 CET.\nProduct Academy (monthly): Deep-dive sessions on NovaT ech\nProjectHub and NovaT ech Insight features, led by product managers.\nLeadership Development Program: A six-month program for employees",
+      "NovaLearn portal. Approval is generally granted for any learning activity that is\nrelevant to the employee's current role or a realistic future role within NovaT ech.\nInternal Learning\nNovaT ech organizes the following internal learning activities:\nTech Talks (bi-weekly): 30-minute presentations by employees on\ntechnical topics, held on alternating Wednesdays at 16:00 CET.\nProduct Academy (monthly): Deep-dive sessions on NovaT ech\nProjectHub and NovaT ech Insight features, led by product managers.\nLeadership Development Program: A six-month program for employees"
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response directly addresses the question about internal AI tools without including any irrelevant information, making it fully relevant and concise.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because none of the retrieval context statements mention AI tools used internally; for example, reasons include 'The statement \"internal tool preference\" is too vague' and 'statements about financial information and customer engagements do not mention AI tools.' No relevant statements were found to support the input question.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because the expected output expresses uncertainty that is not supported by any information in the retrieval context nodes (1st to 4th), as the statement does not relate to or derive from any content provided.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant, with the first node discussing 'internal tool preference' and customer engagement but not AI tools, and subsequent nodes either duplicating this or focusing on internal learning activities without mentioning AI tools. Since no relevant nodes are present to be ranked higher, the score cannot be higher.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1949,
+    "generation_time_ms": 27726
+  },
+  {
+    "id": "q14",
+    "model": "qwen3:1.7b",
+    "input": "What are the key points of the meeting notes?",
+    "actual_output": "The key points of the meeting notes are:  \n1. **Next Leadership Team Meeting**: Scheduled for **April 2, 2026**.  \n2. **Approval**: The notes were reviewed and approved by **Sarah Chen** on the respective dates.  \n\nThese details focus on the upcoming meeting and the approval process, as outlined in the context.",
+    "expected_output": "Key points include the main updates discussed, any identified risks/issues, and the agreed next steps or action items.",
+    "retrieval_context": [
+      "leadership | James | Mar 15 |",
+      "leadership | James | Mar 15 |",
+      "Values alignment: A brief discussion of how the employee has\ndemonstrated NovaT ech's core values.\nDevelopment goals: Review of professional development activities and\nskills growth.\nFeedback exchange: Bidirectional feedback — the employee also\nprovides feedback on management and team dynamics.\nQuarterly check-ins are documented in NovaHR. They are developmental in\nnature and do not directly determine compensation changes.\nAnnual Formal Review\nThe annual formal review takes place in December of each calendar year. It\nsynthesizes the four quarterly check-ins and produces an overall performance",
+      "Values alignment: A brief discussion of how the employee has\ndemonstrated NovaT ech's core values.\nDevelopment goals: Review of professional development activities and\nskills growth.\nFeedback exchange: Bidirectional feedback — the employee also\nprovides feedback on management and team dynamics.\nQuarterly check-ins are documented in NovaHR. They are developmental in\nnature and do not directly determine compensation changes.\nAnnual Formal Review\nThe annual formal review takes place in December of each calendar year. It\nsynthesizes the four quarterly check-ins and produces an overall performance"
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 0.3333333333333333,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.33 because the response focuses on the next meeting date and approval of the notes rather than summarizing the key points discussed in the current meeting. While it relates to the meeting context, it does not directly address the request for key points.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.8333333333333334,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.83 because while the retrieval context includes relevant statements such as 'Values alignment: A brief discussion of how the employee has demonstrated NovaTech's core values' and 'Development goals: Review of professional development activities and skills growth,' it also contains irrelevant statements like 'leadership | James | Mar 15 |' that do not provide detailed information about the meeting notes.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because none of the sentences in the expected output are supported by any node in the retrieval context; key elements like 'main updates discussed', 'risks/issues', and 'agreed next steps or action items' are not mentioned in any retrieval context node.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about meeting notes. For example, the first node ranked 1st contains only 'leadership | James | Mar 15 |' which does not provide any information about meeting notes or their key points, and similarly, the 3rd node ranked 3rd discusses employee performance reviews rather than meeting notes. Since no relevant nodes are present or ranked higher than irrelevant ones, the score cannot be higher.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1839,
+    "generation_time_ms": 34490
+  },
+  {
+    "id": "q15",
+    "model": "qwen3:1.7b",
+    "input": "Explain the company security philosophy.",
+    "actual_output": "The company's security philosophy is centered on safeguarding **confidentiality, integrity, and availability** of all data entrusted to its customers, partners, employees, and third-party stakeholders. Key principles include:  \n1. **Confidentiality**: Protecting sensitive information from unauthorized access or disclosure.  \n2. **Integrity**: Ensuring data is accurate and reliable throughout its lifecycle.  \n3. **Availability**: Maintaining reliable access to systems and data to support business operations.  \n\nThe policy applies to all employees, contractors, and third-party providers, emphasizing strict access controls, mandatory **two-factor authentication (2FA)**, and the use of **hardware security keys** (e.g., YubiKey) to enforce security. Compliance is monitored by the IT Security team, with disciplinary action for violations. The approach prioritizes proactive measures, transparency, and accountability to uphold data protection standards.",
+    "expected_output": "The company security philosophy emphasizes protecting data by following documented policies and applying strong access controls such as strong passwords and timely resets.",
+    "retrieval_context": [
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "published on the company intranet.\n11. Information Technology Policies\nThe IT policies outlined below are mandatory for all employees and contractors\nwith access to NovaT ech systems. Compliance is monitored by the IT Security\nteam, and violations may result in disciplinary action.\nAccess and Authentication\nAll NovaT ech accounts must be protected by two-factor authentication\n(2FA). 2FA is mandatory — no exceptions. Hardware security keys (YubiKey)\n•",
+      "published on the company intranet.\n11. Information Technology Policies\nThe IT policies outlined below are mandatory for all employees and contractors\nwith access to NovaT ech systems. Compliance is monitored by the IT Security\nteam, and violations may result in disciplinary action.\nAccess and Authentication\nAll NovaT ech accounts must be protected by two-factor authentication\n(2FA). 2FA is mandatory — no exceptions. Hardware security keys (YubiKey)\n•"
+    ],
+    "success": true,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 0.9090909090909091,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.91 because the actual output incorrectly states that the company's security philosophy centers on safeguarding data entrusted to its customers, partners, employees, and third-party stakeholders, whereas the context specifies that the policy safeguards data entrusted to NovaTech by those parties.",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response fully addresses the request without any irrelevant information, providing a clear and focused explanation of the company security philosophy.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the retrieval context directly addresses the company's security philosophy, emphasizing safeguarding data confidentiality, integrity, and availability, mandatory IT policies, and strict compliance measures such as two-factor authentication, which perfectly aligns with the input request.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the expected output perfectly reflects the information in nodes 1 through 4 of the retrieval context, accurately capturing the company's security philosophy on data protection and access controls with no missing or unsupported elements.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because all nodes in the retrieval contexts are relevant and ranked at the top positions, with the first and second nodes explaining the policy's purpose to safeguard data, and the third and fourth nodes detailing strong access controls like two-factor authentication, perfectly aligning with the company's security philosophy.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1857,
+    "generation_time_ms": 50143
+  },
+  {
+    "id": "q16",
+    "model": "qwen3:1.7b",
+    "input": "What business updates appear in the quarterly report?",
+    "actual_output": "I cannot find this information in the provided documents.",
+    "expected_output": "The quarterly report includes updates on business performance, key results, and notable activities or changes during the quarter.",
+    "retrieval_context": [
+      "Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.",
+      "Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.",
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15.",
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15."
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context, indicating complete faithfulness.",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response fully addresses the query without any irrelevant information, providing a clear and focused answer about the business updates in the quarterly report.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.058823529411764705,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.06 because the retrieval context mostly contains irrelevant statements such as 'The statement mentions companies and sectors served but does not provide any business updates from a quarterly report.' and numerous placeholders like 'This is just a number without any content.' The only relevant information is 'Next quarterly report: Q2 2026, scheduled for publication July 14, 2026.', which does not provide actual business updates, thus resulting in a very low relevancy score.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because none of the nodes in the retrieval context provide information about the quarterly report's content such as business performance, key results, or notable activities; nodes 1 and 2 only mention the next quarterly report date and publication schedule, so the expected output cannot be supported by the context.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all nodes in retrieval contexts ranked at positions 1 to 4 are irrelevant, as they only provide dates, duplicate information, or unrelated client and sector details without any business updates. Since no relevant nodes appear higher than irrelevant ones, the score cannot be higher.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1857,
+    "generation_time_ms": 25921
+  },
+  {
+    "id": "q17",
+    "model": "qwen3:1.7b",
+    "input": "What products are described in the guide?",
+    "actual_output": "I cannot find this information in the provided documents.",
+    "expected_output": "The guide describes the company’s products and their main features and usage.",
+    "retrieval_context": [
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15.",
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15."
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response fully addresses the question without any irrelevant information, providing a clear and focused answer.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.06818181818181818,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.07 because the majority of the retrieval context statements, such as 'The statement describes data classification and internal information, not products,' indicate irrelevance, while only a few mentions like 'product documentation' and 'management) and NovaTech Insight (business analytics and reporting)' relate to products, but not sufficiently to provide a clear description.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because none of the nodes in retrieval context mention a guide describing the company's products, their features, or usage; the nodes mainly discuss data classification and client sectors without product details.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.41666666666666663,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.42 because the first and second nodes in retrieval contexts, which are ranked higher, are irrelevant as they focus on data classification and internal documentation without describing products, while the relevant nodes appear only at ranks three and four. This lowers the score since irrelevant nodes are ranked above relevant ones. However, the presence of relevant nodes at ranks three and four prevents the score from being lower, reflecting some correct ranking of relevant information.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1845,
+    "generation_time_ms": 34860
+  },
+  {
+    "id": "q18",
+    "model": "qwen3:1.7b",
+    "input": "What risks are mentioned in the documents?",
+    "actual_output": "The documents mention the following risks:  \n1. **Minor inconvenience** for unauthorized disclosure of **Internal data** (non-sensitive project documentation, internal communications, etc.).  \n2. **Significant harm** to **NovaT ech** or its customers for unauthorized disclosure of **Confidential data** (e.g., customer data, financial records, proprietary source code, etc.).  \n3. **Even greater harm** for unauthorized disclosure of **Restricted data** (e.g., authentication credentials, encryption keys, customer payment card data, etc.).  \n\nThese risks are categorized based on the sensitivity of the data and the potential impact of unauthorized disclosure.",
+    "expected_output": "Risks mentioned include security risks like password compromise and other risks/issues noted in the meeting notes or reports.",
+    "retrieval_context": [
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "product documentation. Disclosure of Public data poses no risk to the Company.\nInternal: Information intended for general use within NovaT ech but not approved\nfor external distribution. This includes internal communications, non-sensitive\nproject documentation, organizational charts, internal process guides, and\nmeeting notes that do not reference customer data. Unauthorized disclosure of\nInternal data could cause minor inconvenience but would not result in material\nharm.\nConfidential: Information that, if disclosed without authorization, could cause",
+      "harm.\nConfidential: Information that, if disclosed without authorization, could cause\nsignificant harm to NovaT ech or its customers. This includes customer data,\nfinancial records, employee personal data, proprietary source code, product\nroadmaps, pricing models, contract terms, audit reports, and security\nassessment results. Access to Confidential data is restricted to personnel with a\ndocumented business need.\nRestricted: The most sensitive category of information. This includes\nauthentication credentials, encryption keys, customer payment card data, health",
+      "harm.\nConfidential: Information that, if disclosed without authorization, could cause\nsignificant harm to NovaT ech or its customers. This includes customer data,\nfinancial records, employee personal data, proprietary source code, product\nroadmaps, pricing models, contract terms, audit reports, and security\nassessment results. Access to Confidential data is restricted to personnel with a\ndocumented business need.\nRestricted: The most sensitive category of information. This includes\nauthentication credentials, encryption keys, customer payment card data, health"
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 0.625,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.62 because the response includes definitions of internal, confidential, and restricted data without addressing the specific risks mentioned in the documents. While some relevant information is present, the lack of direct mention of risks limits the relevancy.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.8666666666666667,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 0.87 because while some statements like 'Disclosure of Public data poses no risk to the Company' and 'Unauthorized disclosure of Internal data could cause minor inconvenience but would not result in material harm' address risks, the reasons for irrelevancy note that descriptions of Internal information do not mention risks, indicating partial relevance.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because none of the nodes in the retrieval context mention security risks like password compromise or other risks/issues noted in meeting notes or reports, which are central to the expected output.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.41666666666666663,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.42 because the first two nodes in retrieval contexts, ranked 1st and 2nd, are irrelevant as they emphasize no significant risks, which should be ranked lower. However, the relevant nodes appear only at ranks 3 and 4, discussing significant harm and sensitive information related to security risks, justifying the moderate score rather than a higher one.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 2084,
+    "generation_time_ms": 42658
+  },
+  {
+    "id": "q19",
+    "model": "qwen3:1.7b",
+    "input": "Does the company mention blockchain?",
+    "actual_output": "I cannot find this information in the provided documents.",
+    "expected_output": "I don’t know based on the provided documents.",
+    "retrieval_context": [
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15.",
+      "management) and NovaTech Insight (business analytics and reporting) — serve\nclients in manufacturing, financial services, logistics, and the public sector. In\n1. \n2. \n3. \n4. \n5. \n6. \n7. \n8. \n9. \n10. \n11. \n12. \n13. \n14. \n15.",
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.",
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com."
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response directly addresses the question about whether the company mentions blockchain, with no irrelevant information included.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because none of the statements in the retrieval context mention blockchain or related terms, as highlighted by reasons such as \"The statement 'management) and NovaTech Insight (business analytics and reporting) — serve clients in manufacturing, financial services, logistics, and the public sector.' does not mention blockchain or related terms.\" and the absence of any relevant statements.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response accurately reflects the absence of relevant information in the retrieval context, as seen in node(s) 1 and 3 where only partial and unrelated text fragments are present, making the answer appropriately cautious and precise.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all nodes in retrieval contexts are irrelevant, as the first node (rank 1) states the text does not mention blockchain, and subsequent nodes similarly lack any mention of blockchain. Since no relevant nodes are present to be ranked higher, the score cannot be higher.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1869,
+    "generation_time_ms": 35074
+  },
+  {
+    "id": "q20",
+    "model": "qwen3:1.7b",
+    "input": "What policies protect company data?",
+    "actual_output": "The policies that protect company data include:  \n1. **Network Security Policy**: This policy mandates the use of a company VPN when accessing internal systems from outside the office network, ensures secure connections, and prohibits connecting company devices to untrusted public Wi-Fi without the VPN.  \n2. **Data Protection and Confidentiality Policy**: This policy outlines compliance with data protection laws (e.g., GDPR, CCPA) and establishes procedures to safeguard personal data, including the role of the Data Protection Officer (DPO) for oversight.  \n\nThese policies collectively ensure the confidentiality, integrity, and availability of company data.",
+    "expected_output": "Company data is protected by security policies such as password requirements, regular password changes, and rules for responding to suspected compromise.",
+    "retrieval_context": [
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "Solutions (\"NovaT ech,\" \"the Company\"). The policy exists to safeguard the\nconfidentiality, integrity, and availability of all data entrusted to NovaT ech by its\ncustomers, partners, employees, and other stakeholders.\n1.2 Scope\nThis policy applies to all NovaT ech employees, contractors, temporary staff,\ninterns, and third-party service providers who access, process, store, or transmit\nNovaT ech information assets. It covers all information systems, networks,\napplications, and data repositories operated by or on behalf of NovaT ech,",
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com.",
+      "Network Security\nThe company VPN must be used when accessing internal systems from\noutside the office network. The VPN client (WireGuard) is pre-installed on all\ncompany devices.\nEmployees must not connect company devices to untrusted public Wi-Fi\nnetworks without the VPN active.\n12. Data Protection and Confidentiality\nNovaT ech Solutions processes personal data in compliance with the General\nData Protection Regulation (GDPR), the California Consumer Privacy Act\n(CCPA), and other applicable data protection laws. Our Data Protection Officer\n(DPO) can be reached at dpo@novatech-solutions.com."
+    ],
+    "success": false,
+    "name": "test_case_0",
+    "metrics": [
+      {
+        "metric": "Faithfulness",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "error": null
+      },
+      {
+        "metric": "Answer Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the response fully addresses the question about policies protecting company data without including any irrelevant information.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Relevancy",
+        "score": 1.0,
+        "threshold": 0.5,
+        "success": true,
+        "reason": "The score is 1.00 because the retrieval context directly addresses policies protecting company data, including safeguarding confidentiality, integrity, and availability, VPN usage requirements, and compliance with GDPR and CCPA, which fully aligns with the input question.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Recall",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because none of the nodes in retrieval context mention password requirements, regular password changes, or rules for responding to suspected compromise, which are key elements in the expected output.",
+        "error": null
+      },
+      {
+        "metric": "Contextual Precision",
+        "score": 0.0,
+        "threshold": 0.5,
+        "success": false,
+        "reason": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input, as the first and second nodes (ranks 1 and 2) discuss general policy purposes without specifying protective policies, and the third and fourth nodes (ranks 3 and 4) focus on network security measures without mentioning specific policies protecting company data. Therefore, no relevant nodes are ranked higher than irrelevant ones.",
+        "error": null
+      }
+    ],
+    "retrieval_time_ms": 1872,
+    "generation_time_ms": 44560
+  }
+]
